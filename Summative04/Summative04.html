@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative04</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 4-Trademarks, Patents and Trade Secrets</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative04" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+           450 Points <hr />
+        </div>
+
+<div class="col-lg-12  alert-info ">
+
+
+  <p >1. (50) TESS-Trademark Electronic Search Systemm</p>
+  <p >Use <a href="http://tess2.uspto.gov/" target="_blank">TESS</a> to research the trademark 'ipad'.<br />
+    Briefly explain how there can be so many iPad trademarks.<br />
+    Which one is the 'real' one?
+  </p>
+  <p >
+  <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">    &nbsp;</p>
+<hr />
+	2. (50) What lesson did Nike learn about 
+	international trademarks during the 1990 Olympics in Barcelona, Spain?<br />
+
+  <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">    <p >
+    <br />
+  </p>
+<hr />
+	3. (50) In trademark law, do the symbols &trade; and &reg;
+have the same meaning?<br />
+
+  <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp; " type="text">    
+   
+<hr />
+<p>4. (50) What are some business purposes or uses of trademarks?<br />
+
+  <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p>5. (50) From the perspective of commerce, what 
+is trademark law attempting to protect?<br />
+
+  <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">&nbsp;</p>
+<hr />
+<hr />
+<p ><span class="auto-style1">6</span>. (50) Patents<br />
+  Why did a company such as Amazon.com go through the expense of obtaining a business method patent for a 'One Click' ordering 
+  process if, as critics contend, this process is neither novel nor non-obvious?<br />
+  
+  <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">&nbsp;</p>
+<hr />
+<p>7. (50) Wherein lies the value of a patent to 
+the owner?<br />
+
+  <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">&nbsp;&nbsp;</p>
+<hr />
+  <p >8. (50) A design patent can be 
+  awarded for a new method of manufacture.</p>
+	<p ><input name="q8" type="radio" value="True" /> 
+	True</p>
+	<p ><input name="q8" type="radio" value="False" />&nbsp;False&nbsp;</p>
+	<hr />
+	<p ><span class="auto-style1">9</span>. (50) Trade Secrets<br />
+  Briefly describe why  a business would pursue trade secret protection instead of utility patent, copyright or trademark protection.<br />
+  
+  <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+
+</div>
+  <hr />
+<hr />
+<hr />
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+</body>
+</html>

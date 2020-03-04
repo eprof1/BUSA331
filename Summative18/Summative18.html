@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative18</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 18-Obscenity and Pornography</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative18" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            550 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+<p> Miller Time?<br />
+  <br />
+  Reference page 483.<br />
+  With the advent of the Internet and the copious amounts of pornography (or obscenity?) available online, is it time to update the Miller test? <br />
+  Briefly explain your logic.<br />
+
+ 1. (50)     <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</p>
+<hr />
+<p> Child Pornography</p>
+ 
+    In 1982 the U.S. Supreme Court in New York v. Ferber declared child pornography not entitled to First Amendment protection because of the need to protect children from physical abuse.<br />
+  Since 1996 Congress has enacted several laws (Child Pornography Prevention Act, PROTECT Act of 2003, KIDSPA and some others)
+  which make 'virtual child pornography' a crime.<br />
+2. (50)  Does this trend seem to have a chilling effect on holding a rational discussion of this topic?<br />
+  
+    <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+<hr />
+	<p> Community Standard</p>
+	Briefly explain how you would recommend the courts and congress define 
+	'community standard' in the internet age, being mindful the community is, in 
+	effect, global. <br />
+
+    3. (50)<input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+<hr />
+<p> CDA §223</p>
+What reason did the court give for ruling this law unconstitutional?<br />
+
+   4. (50) <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+<hr />
+
+<p> COPA-Child Online Protection Act</p>
+What two reasons did the court give for striking down this law?<br />
+
+   5. (50) <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+   6. (50) <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+<hr />
+
+<p> CIPA-Children's Internet Protection Act</p>
+Briefly explain how this Act restricted federal funds.<br />
+
+   7. (50) <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+ 
+    <hr />
+
+	<p> Virtual child pornography</p>
+	Briefly explain the current federal position on virtual child pornography.<br />
+	Assume no children were involved with or affected in the process of creating this material. <br />
+	
+   8. (100) <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+ 	<hr />
+
+	<p>Protecting Yourself</p>
+	List two actions computer users who have wireless network and internet access in their residences should take to protect themselves from potential 	liability under current obscenity laws.<br />
+    Briefly explain the importance of each action.<br />
+
+   9. (50) Action 1 and reason:<input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+  10. (50) Action 2 and reason: <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+
+</div>
+<hr />
+<hr />
+
+
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+
+
+
+</body>
+</html>

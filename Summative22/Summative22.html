@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative22</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 22-Issues on the Horizon</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative22" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            500 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+
+  <p >1. (50) Digital Estate Planning <br />
+    <br />
+    List an item that should be included or considered in a comprehensive 
+  digital estate plan:<br />
+ 
+ <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+  </p>
+<hr />
+<p >2. (50) Internet Accessibility
+    <br />
+    Section 508  requires that people with disabilities seeking information or services from a FEDERAL agency have access to and use of information comparable to that provided to nondisabled individuals. 
+<br />
+The ADA places of public accommodation must take reasonable steps to make themselves accessible with physical limitations.<br />
+    Besides one strained Ninth Circuit interpretation, no court has required a private business web site to make
+  these accommodations.<br />
+  Make an educated guess at the next step in the legislative trend for making accommodations, 
+briefly explain what you think will occur.<br />
+ 
+ <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</p>
+<hr />
+<p >3. (50) Net Neutrality
+  <br />
+  Should the FCC (Federal Communications Comission) allow Internet Service Providers to block Internet traffic such as large BitTorrent data files?<br />
+Briefly explain your position.<br />
+
+ <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+  </p>
+<hr />
+<p >4. (50) e-Harmony
+  <br />
+  Considering what happened in the e-Harmony case, do you think a business can 
+be compelled to change the market it is targeting to satisfy equal protection 
+requirements?<br />
+Briefly explain your position.<br />
+ 
+ <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</p>
+<hr />
+<p >5. (50) Geolocation Filtering
+  <br />
+  Should United States jurisdictions be able to enact laws requiring geolocation 
+filtering?<br />
+Briefly explain your position on the matter.<br />
+ 
+ <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</p>
+<hr />
+<p >6. (50) Cloud Computing<br />
+  <br />
+  List a disadvantge of cloud computing to a business when considering possible legal issues.<br />
+ 
+ <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</p>
+<hr />
+<p >7. (50) Digital Currency
+  <br />
+  Develop a brief position statement on the advantages to a business of adopting 
+digital currency as a means of settling transactions such as online sales. <br />
+ 
+ <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</p>
+<hr />
+
+<p >8. (50) Autonomous Vehicles
+  <br />
+ List one way in which autonomous vehicles will benefit society by saving money. <br />
+ 
+ <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</p>
+<hr />
+
+<p >9. (50)Internet of Things
+  <br />
+List one of the primary legal issues that arise because of internet of thing devices.<br /> 
+ <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</p>
+<hr />
+
+
+<p >10. (50) The Internet as a Nation State
+  <br />
+  What does it say about the Internet that citizens of Iran and Israel who would never think of meeting in person will meet on the Internet using e-Bay to transact business?<br />
+ 
+ <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+    <br />
+</p>
+</div>
+<hr />
+<hr />
+
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+</body>
+</html>

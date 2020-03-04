@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative01</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 1-Introduction to Law</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative01" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            400 Points <hr />
+        </div>      
+
+<div class="col-lg-12 alert-info">
+  
+  <p >1. (50) On page 1 the author states: &quot;When the U.S. Constitution was written, the drafters purposely set up a system of checks and balances to disburse power among three branches of government. <br>
+  This separation of powers.... ...The state governments also follow the three-tier separation of powers model.&quot; </p>
+  <p >Briefly explain why our 
+  citizenry puts up with the inefficient &quot;checks and balances&quot; and &quot;separation of powers&quot; in our federal and state governments structures. <br />
+  
+    <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br>  </p>
+  <hr />
+
+
+  <p >2. (50) Tenth Amendment</p>
+  <p >Briefly explain the importance of the Tenth Amendment of the U.S. Constitution. <br />
+  
+  <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br>  </p>
+  <hr />
+  <p >3. (50) Trial courts vs. Appellate courts</p>
+  <p >Briefly explain the difference between the purpose of a trial court and an appellate court.&nbsp; Focus on the main purpose of each.<br />
+  
+  <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br>  </p>
+  <hr />
+
+
+  <p >4. (50) Jurisdiction</p>
+  <p >Briefly explain the concept of jurisdiction, be it personal, subject matter or in rem.<br />
+  
+  <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br>  </p>
+  
+  <hr />
+<p >5. (50) Sources of Jurisdiction</p>
+  <p >List the source(s) of a court's  jurisdiction.<br />
+  
+  <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br>  </p>
+  <hr />
+  <p >6. (50)  Personal Jurisdiction in U.S. Cyberspace</p>
+  <p >List the important factors that a U.S. court would consider in finding personal jurisdiction in a cyberspace lawsuit.<br />
+  
+  <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br>  </p>
+  </p>
+  <hr />
+  <p > Practical Matters </p>
+  <p >What two principles serve as a guide 
+      in conducting your affairs to enhance the probability of a 
+  positive legal outcome?<br />
+  
+
+  <p >7. (50)  </p>
+      <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="Principle 1:    " type="text"> <br>  </p>
+  <p >8. (50)  </p>
+  <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="Principle 2:   " type="text"> <br>  </p>
+
+
+    </div>
+<hr />
+<hr />
+
+
+
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+</body>
+
+
+
+
+</html>

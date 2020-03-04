@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative07</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 7-Privacy Basics</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative07" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit" <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            500 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+	<p >1. (50)&nbsp; Right to 
+	Privacy -Personal considerationn</p>
+	<p >Give an example of a very 
+	personal instance where an individual would want to control the 
+	dissemination of information about themselves.<br />
+	
+   <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> 	<hr />
+	<p >&nbsp;2. (50)&nbsp; Right to 
+	Privacy-Corporate consideration&nbsp;
+  
+  </p>
+	<p >Give an example where a 
+	corporation would be interested in obtaining private information concerning 
+	the instance from question #1 about 
+	an individual.<br />
+  
+   <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> 
+	</p>
+	<hr />
+	<p >3. (50)&nbsp; Right to 
+	Privacy-Balancing competing interests
+  
+  </p>
+	<p >List 5 factors that should be 
+	considered in balancing personal versus corporate interests when dealing 
+	with matters of individual privacy.<br />
+&nbsp;
+  
+   <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> 
+
+	</p>
+	<hr />
+	<p >4. (50) Persona Appropriation<br />
+    <br />
+    On page 169 the book states that &quot;the right of publicity only protects the identity or persona of humans; it does not protect the identity or persona of a corporation, partnership, institution or other business entity.&quot; <br />
+    With the rise of the Internet, social networking, Virtual Reality and <a href="http://www.youtube.com/watch?v=B1G9aQaVdhk" target="_blank" class="bg-danger text-white">MMORPGs</a> is it possible that  a court will find that a right of publicity exists for a non-human or avatar? 
+	<br />
+	Like <a href="http://www.youtube.com/watch?v=cYdpOjletnc" target="_blank">Max Headroom</a>?<br />
+	Explain.<br />
+   <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">         <br />
+  
+    &nbsp;<br />
+  </p>
+<hr />
+  <p >5. (50) Intrusion?<br />
+  <img src="VanOnFire.jpg" alt="van on fire" class="img-rounded img-responsive"></p>
+  <p ><br />    
+    Do you consider the <a href="http://maps.google.com/help/maps/streetview/" target="_blank"  class="bg-danger text-white">Google Street View</a> &nbsp;&nbsp;&nbsp;<a href="http://maps.google.com/help/maps/streetview/privacy.html" target="_blank">Privacy Policy</a> &nbsp;&nbsp;&nbsp;to 
+    be reasonable enough to keep Google from being sued for invasion of privacy?<br />
+    Briefly explain your position.
+  <br />
+    
+   <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">       <br />
+  </p>
+<hr />
+  <p >6. (50) With the rise of the Internet and the coming of age of the &quot;Internet Generation&quot;-those born after 1989, is it time for the United States to enact a general federal privacy law?<br />
+    Briefly explain your position.<br />
+  
+   <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> 
+  </p>
+<hr />
+  <p>7. (50) Email and IM at work<br />
+    <br />
+What  advice should employees be given regarding how to write emails and instant messages regarding work-related matters?
+  <br />
+  Consider the effect of the Federal Rules of Civil Procedure (FRCP) and 
+  discovery.<br />
+ Briefly explain.<br />
+
+   <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> </p>
+  <hr />
+  <hr />
+<p>&nbsp; 8. 
+  (50) Side-Channel Privacy Leakage<br />
+  Steve Gibson, in Episode #264 discusses side-channel privacy leakage.<br />
+  <a href="https://www.grc.com/sn/sn-264.pdf" target="_blank" class="bg-danger text-white">Read this document</a>, pages 4 to 
+  8 primarily, and briefly summarize why this should be of concern to anyone 
+  using the Internet.</p>
+  <p >
+   <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+  </p>
+<hr />
+9. (50) European 
+	Privacy<br />
+	How are United States Corporations affected by European personal data 
+	privacy laws?<br />
+
+   <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> 
+    <hr />
+<p>10. (50) Forgotten?<br />
+    Develop a brief position statement on why there should be a '<a href="https://en.wikipedia.org/wiki/Right_to_be_forgotten" class="bg-danger text-white" target="_blank">Right to be 
+Forgotten</a>'.<br />
+     
+   <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> 
+ </p>
+</div>
+<hr />
+<hr />
+
+
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+
+</body>
+</html>

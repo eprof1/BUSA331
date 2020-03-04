@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative11</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 11-Privacy Policy and Behavioral Marketing</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative11" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            550 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+
+<p>1. (50) Never?
+  <br />
+  Reference page 244-245.<br />
+  What is the lesson to be learned from the ToySmart.com bankruptcy case, where the Bankruptcy Court allowed the destruction of a very valuable company asset, a customer list?<br />
+
+<input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">  </p>
+<hr />
+<p>2. (50) Web site privacy policy <br />
+  What are the main elements of a good web site privacy policy?<br />
+  
+<input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">  <br />
+</p>
+	<hr />
+	<p>3. (50) Cookies and Privacy<br />
+	Briefly describe what factors an individual should consider when adjusting 
+	browser cookie settings.<br />
+  &nbsp;<input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+	<p>4. (50) Visit the Panopticlick 
+	website: <a href="https://panopticlick.eff.org/" class="bg-danger text-white" target="_blank">
+	https://panopticlick.eff.org/</a> <br />
+	Test your browser to determine how much unique data your browser is 
+	revealing by pressing the TEST ME button.<br />
+	Report your results below:
+    <br />
+  &nbsp;<input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+<p>5. (50) Ghostery<br />
+Watch this Ghostery Video:<br />
+<a href="http://www.youtube.com/watch?v=EKzyifAvC_U" class="bg-danger text-white" target="_blank">
+http://www.youtube.com/watch?v=EKzyifAvC_U</a>
+  <br />
+	After viewing this video briefly state whether you are now inclined to 
+	install this software on your browser. <br />
+
+&nbsp;<input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">
+<hr />
+    <p>6.&nbsp; (50) Deep Packet Inspection<br />
+  Briefly state whether the RIAA (Recording Industry Association of America) should be able to have a law enacted that would require or permit ISPs (Internet Service Providers) to use DPI (Deep Packet Inspection) to look for and report on the transmission of copyrighted material (such as music) over the Internet.<br />
+  
+ <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> </p>
+	<hr />
+
+	<h2 class="text-center"> Web Browsers and Do Not Track</h2>
+	<table width="100%"  >
+		<tr>
+			<td >Firefox</td>
+			<td>Chrome</td>
+			<td >IE</td>
+		</tr>
+		<tr>
+			<td><img alt="do not track" src="FirefoxDNT.jpg"class="img-rounded img-responsive" /></td>
+			<td><img src="ChromeDNT.jpg" class="img-rounded img-responsive" /></td>
+			<td><img alt="" src="IE_DNT.jpg" class="img-rounded img-responsive" /></td>
+		</tr>
+	</table>
+	<p><br />
+  7. (50)  Determine your most used browser 'tracking setting'.<br />
+        Are you currently implementing DNT? (yes or no)
+	
+<input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">
+  </p>
+
+    <p>
+
+   8. (50)  Would you recommend your friends changing their browser settings  to 'Do not track?'<br />
+	
+<input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">
+  </p>
+
+
+<hr />
+  <p>9. (150) Website Privacy Oversight<br />
+  After reviewing this chapter, develop a brief position statement of what you 
+  consider to be the correct balance of individual responsibility, browser 
+  default behavior and government regulations in setting the norm for website 
+  privacy.<br />
+  Make sure to consider both personal and business interests.<br />
+  
+<input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+
+</div>
+<hr />
+<hr />
+
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+</body>
+</html>

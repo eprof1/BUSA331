@@ -1,0 +1,193 @@
+<%@ Language=VBScript %>
+<% Response.Buffer = false %>
+<!-- #include virtual ="/Code/constants.asp" -->
+<!-- #include virtual ="/BUSA331/ClassConstants.asp" -->
+<% CurrentSemester = Semester %>
+<html lang="en">
+<title>BUSA331Assignment00</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<form action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmHW" id="frmHW">
+  <h1 align="center"><i><font color="#cc00FF">BUSA 331</font><font color="#cc00FF">
+    <%response.write(semester)%> 
+   Assignment</font></i></h1>
+  <table width="100%" border="1" cellspacing="1" cellpadding="1">
+    <tr bgcolor="#00FFFF">
+      <td width="36%">Email Address:        
+	  <input type="text" name="email" size="30" maxlength="50" /> a valid WSU 
+	  email address is required</td>
+      <td width="40%">First Name:        <input type="text" name="FirstName" size="30" maxlength="50" />        </td>
+      <td width="24%"> Last Name:        <input type="text" name="LastName" size="25" maxlength="50" />        </td>
+    </tr>
+    <tr bgcolor="#00FFFF">
+      <td width="36%">Semester:
+        <select name="Semester">
+          <option selected="selected"><% response.write(semester) %></option>
+      </select>      </td>
+      <td>Class:
+        <select name="Class">
+          <option>BUSA331</option>
+      </select>      </td>
+      <td>            <input name="InstID" type="hidden" id="InstID" value="00617282" />
+	  SID:        
+        <input type="password" name="PIN" />        
+      </td>
+
+    </tr>
+    <tr bgcolor="#00FFFF">
+      <td width="36%">Section:&nbsp;        
+	  <input type="text" name="Section" size="4" maxlength="50" value="01" /></td>
+      <td> Assignment:&nbsp;        
+	  <input type="text" name="Assignment" size="4" maxlength="50" value="00" /></td>
+      <td>&nbsp; </td>
+    </tr>
+    <tr bgcolor="#00FFFF">
+      <td colspan="3">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FF0000">
+      <td colspan="3"><div align="center">
+          <input type="submit" name="Submit" value="Submit" />
+        </div></td>
+    </tr>
+  </table>
+  
+  <p><br />
+    <font color="#FF0000"><b>400 points</b></font></p>
+  <h1 align="center">Basic Course Technologies</h1>
+  <p align="center">&nbsp;</p>
+<p><u>Introduction</u>: The purpose of this assignment is to introduce you to the fundamental technologies used throughout this course. 
+<br />
+The faster you master using these technologies the easier doing the course work will be. 
+<br />
+Modern businesses are quickly adapting these technologies. <br />
+Becoming familiar with them will enhance your career.</p>
+  <ul>
+    <li>Using multiple monitors to increase your productivity.</li>
+    <li>Using video recordings to review work at a later date</li>
+    <li>Using pdf files to share your work in read-only format</li>
+  </ul>
+  <p>This assignment will cover basic aspects of these technologies, you are encouraged to explore on your own to find additional features that will make your life easier.</p>
+  <p><u>Learning Objectives</u>- after completing this assignment you will be able to <strong>use</strong> your laptop to</p>
+  <ul>
+    <li>attach to and setup an external monitor</li>
+    <li>view and search through class recordings</li>
+    <li>create a .pdf file to share a snap shot of your work</li>
+  </ul>
+  <hr />
+  <p>Complete the four exercises in this assignment in order using your favorite web browser- Internet Explorer, FireFox, Chrome...</p>
+<p>Make sure you have enough time to complete this  assignment.<br />
+  Once you start this  assignment you must fill in all the fields (Email, First Name, Last Name...., questions 1, 2 and 3) and then press the Submit button.<br />
+  You cannot save your answers on a web page, or start and then come back later, all your answers will be lost.<br />
+But you can save your completed assignment as a .pdf file; which you will upload 
+to the D2L DropBox</p>
+<h2 align="center"><strong>Do NOT hit F5 or Refresh your browser while doing any assignment. <br />
+  You will LOSE all of your work.</strong></h2>
+<p align="center">All hyperlinks in this document will open a new browser window or tab in order to preserve your work.</p>
+  <hr />
+  <p>The purpose of this assignment is to make sure you know how to use the hardware and software essential to this course.<br />
+    Using an external monitor will greatly simplify your work in this course, enhance your productivity when using a computer, and save you time.<br />
+    You will use Tegrity to review class recordings- a great way to review what was covered in class, and to take notes.<br />
+  You  will be using  Adobe Connect to see  the LCD projector material up close, learn how to participate in a web conference, and how to collaborate with your group.</p>
+  <hr />
+<p>&nbsp;</p>
+<h1 align="center">External Monitor Setup</h1>
+  <p align="left">&nbsp;</p>
+  <p align="left">Modern laptops can support at least one external monitor.<br />
+    Some docking stations (<a href="http://www.toshibadirect.com/td/b2c/adet.to?poid=446396" target="_blank">Toshiba USB-DVI</a>) will allow an additional external monitor connection.<br />
+  Why are additional screens necessary?  Many reasons. Some are:</p>
+  <ul>
+    <li>Conveniently run multiple software applications on separate monitors</li>
+    <li>Easily copy and paste data between open applications</li>
+    <li>Participate in Adobe Connect web conference while also running other applications</li>
+    <li>Watch Tegrity class recordings while also running other applications</li>
+    <li>Administrative assistants keep boss's Outlook open in one monitor at all times</li>
+  </ul>
+  <p>Make sure you understand how to setup, use and disconnect an external monitor from your laptop.<br />
+    For instructions see the following document:  <a href="../../../../HelpFiles/DualMonitors/ExternalMonitors9.pdf" target="_blank">Using External Monitors</a> <br />
+    Also realize that you can use most any CRT or LCD that you come across as an external monitor. <br />
+    Some newer monitors and televisions come with HDMI, DVI or other digital connections.
+    <br />
+    Ref: <a href="http://en.wikipedia.org/wiki/List_of_video_connectors" target="_blank">Video connectors</a><br />
+    The Somsen 104 and Somsen 329 study rooms are equipped with external monitors for your use.
+    <br />
+  <br />
+    <strong><font color="#0000FF">
+    
+     <input name="q1" type="hidden" id="q1" value="see the Dropbox" />
+
+    1.  After attaching an external monitor to your laptop display this page in a web browser on one screen.<br />
+    On the other screen display the external monitor instructions using any program capable of displaying a .pdf file.<br />
+    Take a screen shot of both displays, save it as a graphics file (.jpg, .png or .gif are good- .bmp is bad).<br />
+    (100) Then upload this file to the D2L dropbox folder 'Assignment00'</font></strong></p>
+  <p><strong><font color="#0000FF">Example screen shot showing 2 monitors:<br />
+  <img src="ExternalMonitorScreenShot.jpg" alt="External Monitor Screen Shot" width="1440" height="512" border="2" /></font></strong></p>
+  <p><strong><font color="#0000FF">2. (100) How can the adoption of multiple monitors positively impact a business? <br />
+    Feel free to use the class D2L discussion board to develop an answer to this question.
+  </font><font color="#0000FF"><br />
+  Also 
+  feel free to use Google and any other tools available to search for an answer.</font></strong></p>
+  <p><strong><font color="#0000FF">Please keep your answer brief. Use good grammar and full sentences to make your point.<br />
+  </font></strong> </p>
+  <p align="left">
+    <textarea name="q2" cols="120" rows="4" id="q2">
+    </textarea>
+  </p>
+  <hr />
+  <hr />
+<p>&nbsp;</p>
+  <h1 align="center">&nbsp;</h1>
+  <hr />
+  <hr />
+  <h1 align="center">&nbsp;</h1>
+  <h1 align="center">View Class / Course Recordings Using Tegrity</h1>
+  <p align="left">&nbsp;</p>
+  <p align="left">    Read the <a href="../../EmailNoticesToStudents/Internet Law BUSA331 Summer 2015.htm">Tegrity Recording instructions </a>so that you will know how to access the Tegrity class recordings.</p>
+  <p align="left">Review the Tegrity Recording in the BUSA 331 list that has the title &quot;MapPoint 
+  2013 Territories&quot;<br />
+    Use the search function or view the recording to answer the following question:
+    <br />
+  </p>
+  <p align="left"><strong><font color="#0000FF">3. (100) 
+  Using the &quot;Search&nbsp; in this recording...&quot; box found in the upper right 
+  corner, find the name of the file that is being created using Adobe Acrobat 
+  Pro: </font></strong></p>
+  <p align="left"><strong><font color="#0000FF">
+    &nbsp;        
+  <input name="q3" type="text" id="q3" value="name of file?" size="30" maxlength="50" /></font></strong></p>
+  <hr />
+  <h1 align="center"><a name="PrintToPDF" id="PrintToPDF"></a>Create PDF Files </h1>
+  <p>Feel free to install <a href="../../CourseTechnology.htm#SoftwareInstalls" target="_blank">Adobe Acrobat Pro</a> 
+  from the control panel (PC) or software additions (Mac).<br />
+  It is available to you at no charge, but it is not necessary to have it installed to answer this question.</p>
+  <p>Using your favorite browser, print (File &gt; Print) and save a copy of this assignment as a .pdf file.<br />
+    For future reference, after installing Adobe Acrobat Pro you now have an 'Adobe PDF Converter' on your computer.  
+      <br />
+  You can now print Microsoft Office and other documents(browsers) as .pdf files- for more information see the <a href="http://www.adobe.com/products/acrobatpro/print-to-pdf.html" target="_blank">Adobe web site</a>.</p>
+  <p><a href="PDF_PrintConverter.jpg">
+  <img src="PDF_PrintConverter.jpg" width="449" height="416" alt="pdf print converter" /></a></p>
+  <p align="left"><strong><font color="#0000FF">4. (100) What is the value to a business of being able to convert documents to .pdf files?<br />
+    Consider sustainability.
+    <br />
+  Feel free to use the class D2L discussion board to develop an answer to this question. </font><font color="#0000FF"><br />
+      Also 
+  feel free to use Google and any other tools available to search for an answer.</font></strong></p>
+  <p align="left">
+    <textarea name="q4" cols="120" rows="3" id="q4"></textarea>
+  </p>
+  <hr />
+<hr />
+<h2 align="center">You will not receive credit for this assignment unless you  press the SUBMIT button.</h2>
+<table width="100%" border="1" cellpadding="1" cellspacing="1">
+  <tr bgcolor="#FF0000">
+    <td colspan="3"><div align="center">
+      <input type="submit" name="Submit2" value="Submit" />
+    </div></td>
+  </tr>
+</table>
+<hr />
+<hr />
+</form>
+</body>
+</html>

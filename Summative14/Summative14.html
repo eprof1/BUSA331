@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative14</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 14-Free Speech</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative14" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            550 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+
+<p >1. (50) Political vs Commercial Free Speech <br />
+  Briefly explain why courts afford more protection to political free speech (such as the posting of anti-minority media) that may be socially reprehensible than to commercial free speech.<br />
+
+ <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p >2. (50) Free Speech<br />
+Briefly explain why the First Amendment guarantee of Free Speech is not absolute 
+for a United States citizen. <br />
+
+ <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p > Restrictions on Political 
+Speech</p>
+ List the three elements of restrictions that can be placed on political free speech.   <br />
+ 3. (50) <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+ 4. (50) <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+ 5. (50) <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+
+
+ <br />
+
+<hr />
+<p >6. (50) Restrictions on commercial  speech<br />
+What is the basis of government restrictions on the advertising of tobacco 
+products? <br />
+
+ <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p >7. (50) Occupy Movement<br />
+On what basis could a court or the state restrict the right of the Occupy protesters to their political free speech?<br />
+
+ <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p >8. (50) American Flag<br />
+On what basis can courts allow the burning of the U.S. flag?<br />
+
+ <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+	<p >9. (50) Military Speech<br />
+	Briefly explain why U.S. military soldiers are not afforded the same free 
+	speech protections given to a U.S. citizen not currently in the military.<br />
+	
+ <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+	<p >10. (100) Internet Free Speech<br />
+	Develop a brief position statement on how restrictions on Free Speech need 	to adapt to the Internet era.<br />
+	
+ <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">        <br />
+</p>
+    </div>
+<hr />
+<hr />
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+</body>
+</html>

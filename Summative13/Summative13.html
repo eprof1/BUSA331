@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative13</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 13-Social Media</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative13" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            700 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+
+<p >1. (50) Social Networking<br />
+Do you think it is possible that employees spending time on Facebook 
+could cost employers $4 billion dollars a year? <br />
+Support your answer with a brief statement.<br />
+
+ <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p>2. (50) Value of social network connections</p>
+<p>
+<img src="../Assignment04_old/NetworkValue.jpg" alt="Network value" class="img-rounded img-responsive" /></p>
+<p><br />
+  Assume the following are true: </p>
+<ul>
+  <li> Metcalfe's Law stating that the value of a telecommunications network is proportional to the square of the number of users. Value = n squared</li>
+  <li>Facebook has 1,000,000,000 (one billion) users- 2012</li>
+  <li>Qzone has 536,000,000 users-2012</li>
+  </ul>
+<p class="FormQuestion">What is the approximate ratio of the value of Facebook to Qzone? In other words, about how many times more valuable is Facebook than Qzone?</p>
+<p>Choose the correct answer from the choices below. </p>
+	<p><span class="auto-style1">step 1, value of n-squared for Facebook 
+	and Qzone separately<br />
+	step 2, calculate the ratio of Facebook value/Qzone value</span></p>
+<p>
+  <label>
+    <input type="radio" name="q2" value="11" id="q2_0" />
+    10</label>
+  <br />
+  <label>
+    <input type="radio" name="q2" value="3." id="q2_1" />
+    3.5</label>
+  <br />
+  <label>
+    <input type="radio" name="q2" value="1." id="q2_2" />
+    1.9</label>
+  <br />
+  <label>
+    <input type="radio" name="q2" value="12" id="q2_3" />
+    100</label>
+  <br />
+</p>
+<hr />
+<p> Social Networking-Personal Protection</P>
+   List 4 action an individual can take to protect themselves while using a social network website such as Facebook.
+<br />
+
+ 3. (50)    <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"><br />
+ 4. (50)    <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"><br />
+ 5. (50)    <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"><br />
+ 6. (50)    <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"><br />
+
+
+
+<hr />
+<p>Social Media</p>
+    <p> Provide two examples of how social media  sites can be misused<br />
+
+ 7. (50)    <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"><br />
+ 8. (50)    <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"><br />
+</p>
+    <hr />
+	<p >9. (50) Social Media 
+	Misuse-Police
+    <br />
+    List what you feel is the most egregious example of social media misuse by 
+	police.<br />
+	Feel free to consult Google or the WSU library resources.&nbsp; <br />
+  &nbsp; <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+	<p >10. (50) What laws and norms 
+	are violated when a doctor posts before and after pictures of their patient's 
+	plastic surgery?<br />
+  &nbsp; <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+	<p >11. (50) Courts and Social 
+	Media<br />
+	Does a court have the authority to prevent someone subject to a restraining order 
+	from using social media to contact the covered party?<br />
+  &nbsp; <input name="q11" id="q11" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+	<p >12. (50) Coercion<br />
+	Has Minnesota enacted a state law making it illegal for an employer to 
+	require a potential employee to provide access to their social media sites?
+	<br />
+	If so, provide the citation.<br />
+	Feel free to use Lexis-Nexis which is available through the WSU library 
+	website.<br />
+  &nbsp; <input name="q12" id="q12" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+<p >13. (50) Login to Google and check 
+your <a href="https://myaccount.google.com/privacy" class="bg-danger text-white" target="_blank">Google Privacy Dashboard</a>.<br />
+Review the information provided.<br />
+Are you surprised or alarmed by any of the data being collected? <br />
+
+&nbsp; <input name="q13" id="q13" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+    <p >14. (50) Right to be Forgotten<br />
+	Briefly summarize your thoughts on whether there should be a law providing 
+	US citizens with the<a href="https://en.wikipedia.org/wiki/Right_to_be_forgotten" class="bg-danger text-white" target="_blank"> right to be forgotten</a>.
+    <br />
+  &nbsp; <input name="q14" id="q14" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">
+
+      <br />
+                                </p>
+&nbsp;
+    
+</div>
+<hr />
+<hr />
+
+
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script></body>
+</html>

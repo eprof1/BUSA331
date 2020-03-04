@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative06</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 6-Cybercrimes</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative06" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            500 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+<br />
+<h2 class="text-center">SPAM</h2>
+
+  <p >1. (50) SPAM?<br />
+    What is the difference between ConstantContact.com business practice and SPAM?<br />
+    Ref:  
+    <a href="http://www.xconomy.com/boston/2007/09/13/constant-contact-updates-ipo-filings-acknowledges-employees-bad-blog-behavior/" target="_blank">Xconomy article</a> <br />
+    <a href="http://www.constantcontact.com" target="_blank">ConstantContact.com</a><br />
+    <a href="http://www.constantcontact.com/uidocs/CCSpamPolicy.jsp" target="_blank">ConstantContact Anti-Spam Policy</a><br />
+   <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+  </p>
+<hr />
+  <p >2. (50) Image based spam<br />
+    Briefly explain how ' image based spam' avoids being caught by
+  <a href="http://en.wikipedia.org/wiki/Email_filtering" target="_blank">spam filters</a>.<br />
+    <br />
+    <a href="ImageSpam.png">
+    <img src="ImageSpam.png" alt="image spam" class="img-rounded img-responsive" /></a><br />
+    <br />
+<br />
+  
+   <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+  </p>
+<hr />
+  <p >3. (50) <a href="https://en.wikipedia.org/wiki/Opt-in_email">Opt-in</a> versus Opt-out<br />
+    Develop a brief statement supporting the idea that senders of unsolicited commercial email 
+  should be required to allow receivers to opt-out.<br />
+    
+   <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">   </p>
+	<hr />
+	<p>&nbsp;</p>
+<h2 class="text-center">Social Engineering and Identity Theft</h2>
+
+  <p >4. (50) Lets Go Phishing<br />
+    <br />
+    Take the <a href="http://www.sonicwall.com/phishing/" target="_blank">Phishing Quiz</a><br />
+  Report your score below:<br />
+  
+   <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">   </p>
+<hr />
+<p >5. (50) Social Engineering<br>
+  Try the <a href="https://testmoz.com/1">quiz</a> first. <br />
+  What is the best defense against social engineering, identity theft, phishing, pharming and other such forms of malicious activity?
+<br />
+
+   <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">   </p>
+<hr />
+  <hr />
+  <h2 class="text-center">Cybercrimes Using Technology </h2>
+  <p >&nbsp;</p>
+  <p >6. (50) Wireless Networks<br />
+  Briefly explain how leaving a wireless network unsecured could be considered an act of negligence 
+  on the part of the wireless network owner.
+    <br />
+   <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+  </p>
+<hr />
+7. (50) Cyber Tech Crimes<br />
+How can a business best combat cybercrimes that use technology?<br />
+
+   <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <p>&nbsp;</p>
+<hr />
+	<br />
+<h2 class="text-center">Cybercrimes and Individuals</h2>
+
+  <p>8. (50) Cybercrime?<br />
+    Was Julie Amero guilty of &quot;risk of injury to a minor&quot;?<br />
+    <a href="http://en.wikipedia.org/wiki/State_of_Connecticut_v._Julie_Amero" target="_blank">Wikipedia overview</a><br />
+    <a href="http://www.computerworld.com/s/article/9121218/Spyware_case_finally_closed_for_teacher_Julie_Amero?intsrc=news_ts_head" target="_blank">Case closed</a>. <br />
+
+   <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> </p>
+<hr />
+<p>9. (50) Anonymizer<br />
+  List a  legitimate use of a website such as <a href="http://anonymizer.com/" target="_blank">Anonymizer.com</a>.<br />
+
+   <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> </p>
+<hr />
+<p>10. (50) Government and Your Privacy<br />
+  What provisions of the <a href="http://en.wikipedia.org/wiki/USA_PATRIOT_Act" target="_blank">USA PATRIOT Act</a> do you feel are most unconscionable?<br />
+
+   <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> 
+</p>
+    </div>
+<hr />
+<hr />
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+</body>
+</html>

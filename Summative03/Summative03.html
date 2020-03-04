@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative03</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 3-Copyright Infringement</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative03" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            550 Points <hr />
+        </div>
+
+<div class="col-lg-12  alert-info ">
+
+  <p >1. (50) Infringement</p>
+  <p >Once infringement has been proven, what two remedies are available to a copyright holder?
+    <br />
+ <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">    <br />
+  </p>
+<hr />
+  <p >2. (50) Hypertext Linking Issues</p>
+  <p >Under current U.S. law does a web site need permission from another site to link to that site?
+    <br />
+ <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">  &nbsp;</p>
+<hr />
+  <p >3. (50) To establish a finding 
+  of copyright infringement intent must be proven.</p>
+	<p ><input name="q3" type="radio" value="True" /> 
+	True</p>
+	<p ><input name="q3" type="radio" value="False" />&nbsp;False&nbsp;</p>
+<hr />
+  <p >4. (50) Deep-Linking</p>
+  <p >Briefly explain how a website loses money through the process of deep-linking. <br />
+  Ref: Ticketmaster v. Microsoft<br />
+  
+ <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">  </p>
+  <hr />
+  <p >5. (50) DMCA-Takedown fever</p>
+  <p >After reading about takedown fever on the 
+  bottom of page 48 and following, briefly explain what 'takedown fever' is all 
+  about.<br />
+  
+ <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">  &nbsp;</p>
+  <hr />
+<p >6. (50) 
+<span class="auto-style1">Betamax test</span></p>
+  <p ><span class="auto-style1">Briefly explain the 
+  importance of the Betamax test </span>
+  in regards to the development of new business models, products or services.
+  <br />
+  
+ <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">  &nbsp;</p>
+  <hr />
+<p >7. (50) P2P fears</p>
+  <p ><span class="auto-style1">There have been documented 
+  cases of the children of government employees installing P2P software (such as 
+  Limewire) on home computers, thereby exposing classified government files to 
+  persons unknown.<br />
+  Briefly explain how this problem should be addressed.<br />
+  If you propose a law, briefly explain the purpose.</span>
+  <br />
+  
+ <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">  &nbsp;</p>
+  <hr />
+<p > File Sharing Infringement and Technology</p>
+  <p >After reading and discussing the 
+  materials in this and prior chapters, list 2 factors on both sides of the argument.<br />
+    The need for protection for the copyright creator or holder, versus society's interest in low cost multimedia.</p>
+  <p >
+ 8. (50) <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="Pro file sharing 1:" type="text"> <br />
+9. (50) <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="Pro file sharing 2:" type="text"> <br />
+10. (50) <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="Con file sharing 1:" type="text"> <br />
+11. (50) <input name="q11" id="q11" size="120" maxlength="120" class="form-control" value="Con file sharing 1:" type="text"> <br />
+  </p>
+
+
+</div>
+<hr />
+<hr />
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+</body>
+</html>

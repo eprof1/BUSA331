@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative20</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 20-Business and the Internet</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative20" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            400 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+
+<p >1. (50) Business, Litigation and the Internet</p>
+  <br />
+  Considering&nbsp; the possibility of e E-Discovery, briefly describe what step 
+a business should take before-hand in terms of emails and data-retention that 
+would prevent the business from getting in trouble with the court in case it 
+were found to be deleting documents?<br />
+   
+ <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br /></p>
+<hr />
+
+
+<p >2. (50) Corporate Securities</p> 
+  Does the JOBS Act of 2012 allow the creation of a crowd-funded business by selling $10 million in stock within 12 months? <br />
+<input name="q2" type="radio" value="Yes" /> Yes<br />
+<input name="q2" type="radio" value="No" /> No 
+    <br />
+
+	<hr />
+
+	<p >&nbsp;3. (50) Fair Disclosure</p>
+	Is it permissible for a CEO to use a social media site to disclose material 
+	non-public information before investors have been notified? <br />
+	<input name="q3" type="radio" value="Yes" /> Yes<br />
+	<input name="q3" style="height: 20px" type="radio" value="No" /> No
+
+<br />
+    <hr />
+
+
+<p >4. (50) Cyber gripers</p>
+Before getting involved in SLAPP&nbsp; litigation or taking on a cyber griper, 
+what should a business consider?<br />
+
+ <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+<hr />
+
+
+<p >5. (50) Interstate Commerce<br />
+Courts take the position that the borderless nature of the Internet should make 
+it easy for state's to enact restraints on Interstate Commerce.<br />
+<input name="q5" type="radio" value="Yes" /> Yes<br />
+<input name="q5"  type="radio" value="No" /> No
+
+</p>
+<hr />
+
+<p > Internet and Sales Tax</p>
+Use the WSU Library or the Internet to research and answer this question, and 
+provide the url where you found your answer.<br />
+Approximately how many taxing jurisdictions are there in the United States?<br />
+
+6. (50) <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br /></p>
+<hr />
+
+
+<p > Privacy Concerns-Data  Breach</p>
+	Assume a company was involved in a data breach. <br />
+    Briefly explain what the benefit would be to the company of having encrypted the data before the 
+	breach ever occurred.<br />
+	
+ 7. (50)<input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+
+	<hr />
+
+
+	<p > Lifestyle Privacy </p>
+    Assume you are an employee of an organization promoting a strict code of ethics.<br />
+    Are you entitled to the same standards of behavior as an ordinary citizen, if you violated your employer's code of ethics?<br />
+   Briefly explain your answer. <br />
+
+ 8. (50)  <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"> <br />
+</div>
+      <hr />
+<hr />
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+</body>
+</html>

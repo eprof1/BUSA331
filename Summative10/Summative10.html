@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative10</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 10-Privacy and the Police State</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative10" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            550 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+  <p >&nbsp;</p>
+	<p >1. (50) Government Intrusion
+    <br />
+    Give an example of illegal governmental intrusion into an individual's 
+	privacy.&nbsp; <br />
+ &nbsp; <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+	<p >2. (50) Government search and 
+	seizures<br />
+    Under what conditions can the government apply for a warrant to conduct 
+	search and seizure?&nbsp; <br />
+ &nbsp; <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+	<p >3. (50) Establishing Probable 
+	Cause<br />
+	Has the standard for probable cause &quot;What society deems reasonable&quot; changed 
+	in the last fifty years?<br />
+	Briefly summarize your thoughts. <br />
+ &nbsp; <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+	<p >4. (50) <a href="https://en.wikipedia.org/wiki/Foreign_Intelligence_Surveillance_Act" class="bg-danger text-white" target="_blank">Foreign Intelligence 
+	Surveillance Act</a><br />
+    Briefly describe what worries you most about the FISA and the <a href="https://en.wikipedia.org/wiki/United_States_Foreign_Intelligence_Surveillance_Court" class="bg-danger text-white" target="_blank">FISCs</a>.&nbsp; <br />
+&nbsp; <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+	<hr />
+<p >5. (50) <a href="https://www.cnn.com/2018/01/16/politics/senate-fisa-bill/index.html" class="bg-danger text-white" target="_blank">FISA extension </a>
+  <br />
+Briefly summarize your position on whether the <a href="https://en.wikipedia.org/wiki/Foreign_Intelligence_Surveillance_Act"class="bg-danger text-white" target="_blank">FISA</a > should continue to be extended.<br />
+
+&nbsp; <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+    <p > <a href="https://en.wikipedia.org/wiki/History_of_the_Patriot_Act" class="bg-danger text-white" target="_blank">USA Patriot Act</a><br />
+    6. (50) What provision of the USA Patriot Act do you find most disturbing?
+ &nbsp;  <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+
+    <p  USA Patriot Act>
+              <br />
+    7. (50) What provision of the USA Patriot Act do you find most beneficial?<br />
+ &nbsp; <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+
+    <hr />
+
+	<p>8. (50) <a href="https://en.wikipedia.org/wiki/Communications_Assistance_for_Law_Enforcement_Act" class="bg-danger text-white" target="_blank">CALEA</a><br />
+    Provide a suggestion for improving CALEA.<br />
+	
+ <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">  </p>
+<hr />
+  <p>9. (50) Government Espionage
+    <br />
+  Develop a brief position statement on the use of various methods and tools for 
+  government data collection.<br />
+ 
+ <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+10. (100) US Citizens Right to Privacy<br />
+	Reflect on the contents of this chapter.<br />
+	How should the Constitution of the United States be amendend to protect a 
+	citizens right to privacy? <br />
+	Develop a brief proposal.<br />
+	
+ <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"><br />
+
+</div>
+
+<hr />
+<hr />
+
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+
+</body>
+</html>

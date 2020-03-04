@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative12</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 12-Privacy and Children</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative12" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            400 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+	<p>&nbsp;</p>
+
+<p >1. (50) The Problem With Children<br />
+What did Soupy Sales demonstrate on his <a href="http://www.youtube.com/watch?v=a-OGy3Kh7yM" target="_blank" class="bg-danger text-white">television show on New Year's Day</a> in 1965? <br />
+
+<input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p >2. (50) Targeting Children<br />
+Why is so much advertising targeted at children? <br />
+
+<input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p >3. (50) COPPA<br />
+Research COPPA, and develop a brief statement of its effectiveness (or lack of 
+effectiveness). <br />
+
+<input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p >4. (50) Online predator problem<br />
+If online predators are not a problem, then what category of person is most 
+likely to abduct a child? <br />
+
+<input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p >5. (50) Web monitoring software<br />
+Echometrix and EPIC :&nbsp; <a href="http://epic.org/privacy/echometrix/" target="_blank" class="bg-danger text-white">
+http://epic.org/privacy/echometrix/</a> <br />
+Why did EPIC file a complaint against Echometrix? Provide a brief summary.<br />
+
+<input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+<p >6. (50) Online postings<br />
+After reviewing the discussion of what kids and people will post and discuss in 
+online environments, do you believe this type of interaction should be prevented 
+for children under 18?<br />
+Give a brief argument for or against.<br />
+
+<input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+	<p >7. (50) Virtual reality 
+	behavior<br />
+	Should online activities in virtual environments be governed by the same 
+	rules as the physical world?<br />
+	Consider avatars engaging in violent behavior as in a first person shooter 
+	game.<br />
+	Give a brief argument for or against.<br />
+	
+<input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"></p>
+<hr />
+	<p >8. (50) To post or not to post<br />
+	Should online postings by children under 18 be prohibited in order to 
+	protect these children?<br />
+	Consider children expressing grief at the loss of a parent or close friend.<br />
+	Give a brief argument for or against.<br />
+	
+<input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text"><br />
+
+	</p>
+    </div> 
+
+<hr />
+<hr />
+
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+</body>
+</html>

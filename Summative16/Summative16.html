@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+	PgP 3/2/2020 updating MIS202 files to align with other assignments 
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+
+	<!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+	<script src="../constants.js"></script>
+	<script src="../../ReadOnly/CourseConstants.js"></script>
+
+	<!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+	<title>BUSA331 Summative16</title>
+</head>
+
+
+
+<body class="container-fluid" onload="setVariables()">
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center text-danger">Chapter 16-Student Speech</h1>
+
+<!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+		<div class="row col-lg-12">
+			<div class="col-lg-3">
+				<label class="text-primary" for="FirstName">First Name:</label>
+				<input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="LastName">Last Name:</label>
+				<input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="pin">StarID:</label>
+				<input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
+			</div>
+			<div class="col-lg-3">
+				<label class="text-primary" for="email">Email:</label>
+				<input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
+			</div>
+		</div>
+
+    <div class="row col-lg-12">
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text" value="default" readonly="readonly">
+     </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="default" type="text" readonly="readonly">
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <input class="form-control" name="section" id="section"  value="default" type="text"  readonly="readonly">
+      </div>
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative16" type="text" readonly="readonly">
+      </div>    
+    </div>
+<!-- -end-Student, class and assignment information-end -->
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            800 Points <hr />
+        </div>
+
+<div class="col-lg-12 alert-info">
+
+
+
+
+<p> 1. (50) Schools and Speech</p>
+  Are private schools affected by free speech restrictions in the same manner as 
+public schools?&nbsp; Briefly explain..<br />
+
+   <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+<hr />
+<p >2. (50) Free Speech-Schools<br />
+Briefly describe the competing interests that need to be balanced with regards 
+to student speech in schools.<br />
+
+   <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+</p>
+<hr />
+<p>Free Speech Forums</p>
+List the three possible forum types for free speech. <br />
+
+3. (50)   <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+4. (50)   <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+5. (50)   <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+<hr />
+<p >Standards</p>
+What is the standard known at the Tinker test?<br />
+
+6. (50)   <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+<hr />
+
+<p> Speech Suppression</p>
+Briefly list the four conditions under which public school officials may suppress speech.<br />
+7. (50)   <input name="q7" id="q7" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+8. (50)   <input name="q8" id="q8" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+9. (50)   <input name="q9" id="q9" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+10. (50)   <input name="q10" id="q10" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+<hr />
+
+
+<p>Vulgar Student Speech</p>
+Briefly list the four issues that arise when schools try to punish students for 
+vulgar, off-campus speech.<br />
+
+11. (50)   <input name="q11" id="q11" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+12. (50)   <input name="q12" id="q12" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+13. (50)   <input name="q13" id="q13" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+14. (50)   <input name="q14" id="q14" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+<hr />
+	<p >Cyberbullying</p>
+	Which famous Supreme Court case was not about, but may pertain to, 	cyberbullying?<br />
+	
+15. (50)   <input name="q15" id="q15" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+</p>
+<hr />
+	<p> U.S. Supreme Court</p>
+	Based on the materials in this chapter develop a brief position statement on 
+	what action needs to be taken by the Supreme Court with respect to student 
+	free speech.<br />
+	
+16. (50)   <input name="q16" id="q16" size="120" maxlength="120" class="form-control" value="&nbsp;" type="text">     <br />
+        <br />
+    </div>
+<hr />
+<hr />
+<div class="col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+</form>
+
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ReadOnly/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../ReadOnly/bootstrap.js"></script>
+
+</body>
+</html>
