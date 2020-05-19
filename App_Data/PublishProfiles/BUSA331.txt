@@ -15,7 +15,7 @@ In order to learn more about this please visit https://go.microsoft.com/fwlink/?
     <!--  network path to webserver with current YearTerm, CourseID and WSU network username,
     replace 'Username' with your WSU network name, such as jrstudent16; and uncomment by removing < >  -->
 
-    <publishUrl>\\winona.edu\dfs\Students\ClassStorage\20211000087\Username\</publishUrl>
+    <publishUrl>\\winona.edu\dfs\Students\ClassStorage\20211000028\Username\</publishUrl>
   
     <!-- if true, removes files from web server before publishing, often resolves publication issues,
     be mindful of repo location of files like web.config, constants.js; PgP 8/20/2018 -->
