@@ -1,3 +1,7 @@
+PgP 3/22/2021
+* summer 2021 online class
+* renamed default to HomePage
+
 PgP 3/4/2020
 * summer 2020 online class
 * updated home page, full scripted to use constants files
