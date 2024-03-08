@@ -1,0 +1,34 @@
+ref:  https://www.cnet.com/tech/tech-industry/consumer-group-to-fight-doubleclick-deal/
+
+Consumer group to fight DoubleClick deal
+A consumer group says the proposed $1 billion merger of Net advertiser DoubleClick and market researcher Abacus is an assault on personal privacy.
+
+Jan. 2, 2002 4:43 p.m. PT
+
+
+A group of consumer advocates is planning to demand that federal regulators block the proposed $1 billion merger of Internet advertiser DoubleClick and market researcher Abacus Direct, criticizing the deal as an assault on personal privacy, several sources say.
+DoubleClick announced today that it plans to acquire Abacus in a stock-swap deal that the companies hope to seal by late third quarter.
+
+Under the deal, e-commerce sites in DoubleClick's advertising network would correlate the names and addresses of Net shoppers and with the Abacus Alliance buying-habit database, which represents more than 2 billion consumer catalog transactions. Their goal is to allow marketers in both media to target potential customers more efficiently.
+
+But privacy advocates, who plan to file a complaint with the Federal Trade Commission as soon as tomorrow seeking to halt the merger, say the deal defies fair information collection practices, such as requesting permission before sharing a consumer's information and not using personal data for purposes other those originally stated.
+
+"It's the most horrendous merger for privacy," said Jason Catlett, founder of Junkbusters, a clearinghouse for privacy-protection measures. "There will be a centralized database containing a tremendous amount of information about your online and offline behavior, which will provide more ways for marketers to find you."
+
+Critics also charge that the business plan contradicts the spirit of DoubleClick's privacy policy for its advertising network. The company's DART system delivers targeted ads to consumers by using so-called cookies that track surfing habits. According to the privacy policy posted on its Web site, DoubleClick now promises not to collect "any personally identifiable information about you, such as your name, address, phone number, or email address."
+
+Although DoubleClick still doesn't plan to collect personal data itself, privacy groups are crying foul because the company intends to facilitate the exchange of data between its network of more than 1,300 Web sites and Abacus's 1,100 merchandise catalog companies.
+
+"The participants will have the ability to make that match...It would be name and address," DoubleClick's CEO Kevin O'Connor said during a press conference earlier today.
+
+Representatives from both companies were not immediately available to comment about the pending privacy complaint to the FTC.
+
+DoubleClick and Abacus contend, however, that they put consumers first by giving people the option of removing themselves from the databases and by trying to deliver only relevant marketing information to potential customers.
+
+"It's about delivering the right message to the right consumer at the right time," O'Conner said after the announcment.
+
+An Abacus spokeswoman also said privacy concerns are not lost on the two firms. "Both companies take that very seriously and it was a big part of the discussions," she said.
+
+Nonetheless, critics say consumers should have more control over whom their contact information is shared with and how it is used. "It is a red flag for privacy advocates," said Marc Rotenberg, executive director of the Electronic Privacy Information Center.
+
+"What they are doing is simply wrong," he added. "That is why we've been trying to make the case against self regulation: These policies quickly collapse when an opportunity presents itself, and that is what we're seeing here."
